@@ -1,13 +1,13 @@
-#Project 1 - Big Data and Cloud Computing
+# Project 1 - Big Data and Cloud Computing
 
 **App Engine Link**: https://imposing-kite-140412.uc.r.appspot.com
 
 
-##Summary
+## Summary
 
 In this project I have to program an AppEngine app that provides information about images taken from the Open Images dataset. Additionally, the app employs a TensorFlow model for image classification derived using AutoML Vision.
 
-###The primary work will consist in:
+### The primary work will consist in:
 
 + Defining a BigQuery data set from given CSV files using a Python script or Colab notebook.
 + Programming the app endpoints that are missing. Each endpoint needs to query data stored in BigQuery, and reference the corresponding image files stored in a public storage bucket;
@@ -16,10 +16,10 @@ In this project I have to program an AppEngine app that provides information abo
 ![image](https://user-images.githubusercontent.com/17788854/177190054-e76eab31-4fb6-4351-8786-3f0fe7310819.png)
 
 
-###Data model
+### Data model
 ![image](https://user-images.githubusercontent.com/17788854/177189967-d4bfd3aa-0aaf-45aa-9855-c5ad85248072.png)
 
-###Additional challenges
+### Additional challenges
 **Use of the Cloud Vision API**
 + Develop an alternative app endpoint for image classification that makes use of label detection through the Google Cloud Vision API using the corresponding Python client API.
 
