@@ -1,0 +1,37 @@
+{% extends 'general-template.html'  %}
+{% block content %}
+
+<h1>{{ data.image_id }}</h1>
+
+<table>
+    <tr>
+        <th>Classes</th>
+        <th>Relations</th>
+        <th>Image</th> 
+    </tr>
+    
+    <tr> 
+        <td>
+            {% for result in data.results.strip("[] ").replace('"', "").split(",") %}
+                <a href='/image_search?description={{ result.strip() }}'>{{ result.strip() }}</a><br>  
+            {% endfor %}    
+        </td>
+        <td>
+            {% if data.results1 != [['NULL']] %}
+                {% for result in data.results1 %}
+                    <a href="/relation_search?relation={{ result[1] }}&amp;class1={{ result[0] }}&amp;class2={{ result[2] }}">
+                        {{ result[0] }} {{ result[1] }} {{ result[2] }}
+                    </a><br>
+                {% endfor %}  
+            {% endif %}    
+        </td>
+        <td>
+            <a href="https://storage.googleapis.com/bdcc_open_images_dataset/images/{{ data.image_id }}.jpg">
+                <img width="300" src="https://storage.googleapis.com/bdcc_open_images_dataset/images/{{ data.image_id }}.jpg"/>
+            </a>
+        </td>
+    </tr>
+     
+</table>
+
+{% endblock %}

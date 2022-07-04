@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>Not implemented</title>
+<head>
+        <meta charset="utf-8" />
+        <title>Lepilens Web</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+{% extends 'general-template.html'  %}
+{% block content %}
+
+<h1>RELATIONS</h1>
+
+<table>
+    <tr>
+        <th>Relation</th>
+        <th>Image count</th>
+    </tr>
+{% for result in data.results %}
+    <tr>
+        <td>
+            <a href="/relation_search?relation={{ result[0] }}">{{ result[0] }}</a></h2>            
+        </td>
+        <td>
+            {{ result[1] }}</h2>
+        </td>
+    </tr>
+{% endfor %}
+</table>
+
+
+</table>
+
+{% endblock %}

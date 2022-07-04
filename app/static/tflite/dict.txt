@@ -1,0 +1,10 @@
+Cat
+Fish
+Antelope
+Bird
+Deer
+Horse
+Snake
+Dog
+Spider
+Lizard
