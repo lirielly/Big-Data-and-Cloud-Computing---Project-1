@@ -16,10 +16,10 @@ In this project you will have to program an AppEngine app that provides informat
 ![image](https://user-images.githubusercontent.com/17788854/177190054-e76eab31-4fb6-4351-8786-3f0fe7310819.png)
 
 
-### Data model
+## Data model
 ![image](https://user-images.githubusercontent.com/17788854/177189967-d4bfd3aa-0aaf-45aa-9855-c5ad85248072.png)
 
-### Additional challenges
+## Additional challenges
 **Use of the Cloud Vision API**
 + Develop an alternative app endpoint for image classification that makes use of label detection through the Google Cloud Vision API using the corresponding Python client API.
 
