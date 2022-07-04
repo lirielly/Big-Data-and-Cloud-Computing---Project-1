@@ -5,7 +5,7 @@
 
 ## Summary
 
-In this project I have to program an AppEngine app that provides information about images taken from the Open Images dataset. Additionally, the app employs a TensorFlow model for image classification derived using AutoML Vision.
+In this project you will have to program an AppEngine app that provides information about images taken from the Open Images dataset. Additionally, the app employs a TensorFlow model for image classification derived using AutoML Vision.
 
 ### The primary work will consist in:
 
